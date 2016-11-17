@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="app.com.thetechnocafe.expensemanager.NewTripActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_grey"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/new_trip"
+        android:textColor="@android:color/white"
+        android:textSize="24dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:layout_weight="20"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="@string/from"
+                    android:textColor="@color/dark_grey_text"
+                    android:textStyle="bold"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:id="@+id/new_trip_from"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:hint="@string/new_trip_from_hint"
+                    android:inputType="textShortMessage"
+                    android:padding="16dp"
+                    android:textColor="@color/dark_grey_text"
+                    android:textColorHighlight="@color/dark_grey_text"
+                    android:textColorHint="@color/dark_grey_text"
+                    android:textColorLink="@color/dark_grey_text"
+                    android:textSize="16dp"
+                    android:layout_weight="0.5"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="@string/to"
+                    android:textColor="@color/dark_grey_text"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    />
+
+                <EditText
+                    android:id="@+id/new_trip_to"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:hint="@string/new_trip_to_hint"
+                    android:inputType="textShortMessage"
+                    android:padding="16dp"
+                    android:textColor="@color/dark_grey_text"
+                    android:textColorHighlight="@color/dark_grey_text"
+                    android:textColorHint="@color/dark_grey_text"
+                    android:textColorLink="@color/dark_grey_text"
+                    android:textSize="16dp"
+                    android:layout_weight="0.5"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="@string/total_budget"
+                    android:textColor="@color/dark_grey_text"
+                    android:textStyle="bold"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:id="@+id/new_trip_budget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:hint="@string/new_trip_budget_hint"
+                    android:inputType="numberDecimal"
+                    android:padding="16dp"
+                    android:textColor="@color/dark_grey_text"
+                    android:textColorHighlight="@color/dark_grey_text"
+                    android:textColorHint="@color/dark_grey_text"
+                    android:textColorLink="@color/dark_grey_text"
+                    android:textSize="16dp"
+                    android:layout_weight="0.5"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="@string/start_date"
+                    android:textColor="@color/dark_grey_text"
+                    android:textStyle="bold"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/new_trip_start_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background_color"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="12 January 2016"
+                    android:textColor="@color/dark_grey_text"
+                    android:layout_weight="0.5"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal"
+                android:gravity="bottom"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/new_trip_cancel_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/expense_button"
+                    android:text="@string/end_trip_cancel"
+                    android:textColor="@drawable/expense_button"
+                    />
+
+                <View
+                    android:layout_width="0.1dp"
+                    android:layout_height="match_parent"
+                    />
+
+                <Button
+                    android:id="@+id/new_trip_start_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/expense_button"
+                    android:text="@string/start_trip"
+                    android:textColor="@drawable/expense_button"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

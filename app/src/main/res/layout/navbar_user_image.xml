@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:id="@+id/navbar_user_image_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gurleen Sethi"
+        android:textSize="24sp"
+        android:layout_margin="8dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/navbar_user_image_total_trip_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/navbar_user_image_text"
+        android:text="Total Trips : 34"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/navbar_user_image_total_money_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/navbar_user_image_total_trip_text"
+        android:text="Total money spent : 34566"
+        android:layout_marginLeft="16dp"/>
+
+    <ImageView
+        android:id="@+id/navbar_user_image_view"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_navbar_user_image"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@id/navbar_user_image_text"/>
+
+</RelativeLayout>

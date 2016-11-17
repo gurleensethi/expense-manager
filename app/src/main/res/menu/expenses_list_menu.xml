@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/chart_view"
+        android:title="@string/chart_representation"
+        android:icon="@drawable/ic_chart"
+        app:showAsAction="ifRoom|withText"
+        />
+    <item
+        android:id="@+id/expense_list_menu_new"
+        android:title="@string/new_expense"
+        android:icon="@drawable/ic_expenses_list_new_expense"
+        app:showAsAction="ifRoom|withText"
+        />
+    <item
+        android:id="@+id/expense_list_menu_detail"
+        android:title="@string/show_in_detail"/>
+    <item
+        android:id="@+id/expense_list_menu_category"
+        android:title="@string/show_expense_categorywise"/>
+    <item
+        android:id="@+id/expense_list_menu_date"
+        android:title="@string/show_expense_datewise"/>
+</menu>

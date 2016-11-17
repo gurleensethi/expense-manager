@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:key="pref_user_name"
+        android:title="@string/pref_user_name"
+        android:defaultValue=""
+        android:inputType="textShortMessage"
+        android:hint="@string/your_name"
+        android:summary="@string/pref_user_name_summary"
+        />
+
+    <CheckBoxPreference
+        android:key="pref_pin_check"
+        android:defaultValue="false"
+        android:title="@string/pref_pin_check"
+        android:summary="@string/pref_pin_check_summary"/>
+
+    <EditTextPreference
+        android:key="pref_pin"
+        android:dependency="pref_pin_check"
+        android:title="@string/pref_pin"
+        android:summary="@string/pref_pin_summary"
+        android:defaultValue=""
+        android:inputType="number"
+        android:hint="@string/pref_pin"
+        />
+</PreferenceScreen>

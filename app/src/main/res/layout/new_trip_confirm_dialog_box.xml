@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:background="@color/dark_grey"
+        android:text="@string/trip_details"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textSize="24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:background="@color/dark_grey"
+            android:text="@string/dialog_continue"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textSize="16dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:text="@string/from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:layout_margin="4dp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_grey_text"/>
+
+        <TextView
+            android:id="@+id/dialog_trip_details_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Noida"
+            android:textSize="24dp"
+            android:layout_margin="4dp"
+            android:textColor="@color/dark_grey_text"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:text="@string/to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:layout_margin="4dp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_grey_text"/>
+
+        <TextView
+            android:id="@+id/dialog_trip_details_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delhi"
+            android:textSize="24dp"
+            android:layout_margin="4dp"
+            android:textColor="@color/dark_grey_text"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:text="@string/total_budget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:layout_margin="4dp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_grey_text"/>
+
+        <TextView
+            android:id="@+id/dialog_trip_details_budget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u20B9 2500"
+            android:textSize="24dp"
+            android:layout_margin="4dp"
+            android:textColor="@color/dark_grey_text"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:text="@string/start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:layout_margin="4dp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_grey_text"/>
+
+        <TextView
+            android:id="@+id/dialog_trip_details_start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12 Jan 2016"
+            android:textSize="24dp"
+            android:layout_margin="4dp"
+            android:textColor="@color/dark_grey_text"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+
+        <Button
+            android:id="@+id/new_trip_go_back_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/expense_button"
+            android:text="@string/dialog_go_back"
+            android:textColor="@drawable/expense_button"
+            />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            />
+
+        <Button
+            android:id="@+id/new_trip_confirm_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/expense_button"
+            android:text="@string/dialog_confirm"
+            android:textColor="@drawable/expense_button"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

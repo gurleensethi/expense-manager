@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/particulars"
+        android:textSize="24dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/particulars_dialog_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="This is a random note to test the particulars screen long long text. Hello hello no hello hello"
+        android:textColor="@color/dark_grey_text"
+        android:textSize="16dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/particulars_dialog_close_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/expense_button"
+        android:text="@string/particulars_dialog_close"
+        android:textColor="@drawable/expense_button"
+        android:textSize="16dp"/>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@drawable/navbar_item">
+
+    <ImageView
+        android:id="@+id/navbar_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_navbar_settings"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/navbar_list_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/navbar_item"
+        android:textSize="24dp"
+        android:padding="16dp"
+        android:layout_toRightOf="@id/navbar_image_view"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/navbar_list_item_name"/>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="expensetheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/indigo</item>
+        <item name="android:actionMenuTextColor">@color/colorAccent</item>
+    </style>
+
+    <style name="expensetheme" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/indigo</item>
+    </style>
+
+</resources>
