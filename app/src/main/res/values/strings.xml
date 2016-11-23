@@ -88,4 +88,6 @@
     <string name="add_photo">Add Photo : </string>
     <string name="take_photo">Take Photo </string>
     <string name="choose_photo">Choose from Library</string>
+    <string name="save">Save</string>
+    <string name="saved_image">Image saved in gallery</string>
 </resources>
